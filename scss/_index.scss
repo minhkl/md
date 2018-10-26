@@ -1,0 +1,51 @@
+$md-main-color: rgb(242, 113, 29);
+
+body {
+  background: gray;
+}
+.md-btn-primary {
+  background-color: $md-main-color;
+  border-color: $md-main-color;
+  &:hover {
+    background-color: lighten($md-main-color, 5%);
+    border-color: lighten($md-main-color, 5%);
+  }
+}
+
+.md-header {
+  .nav-item {
+    line-height: 55px;
+  }
+  .nav-link{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    &:hover {
+      color: darken(#FFFFFF, 10%);
+    }
+  }
+  .login-nav-link {
+    $color: #F47D20;
+    color: $color;
+    font-weight: bold;
+    letter-spacing: 1.17px;
+    line-height: 19px;
+    &:hover {
+      color: lighten($color, 5%);
+    }
+  }
+  .md-header .nav-item {
+    line-height: 55px;
+  }
+  .nav-link.sign-up-nav-link {
+    display: inline-block;
+    padding: 18px 34px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.17px;
+  }
+}
+
