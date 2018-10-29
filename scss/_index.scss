@@ -7,6 +7,15 @@ body {
 .md-btn-primary {
   @include button-variant($md-main-color, $md-main-color);
 }
+@mixin mdIcon($size) {
+  @include size($size);
+  border-radius: 5px;
+  color: $md-main-text-color;
+  background-color: #FFEFD9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 $md-container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -90,6 +99,22 @@ $md-container-max-widths: (
   }
 }
 
+.md-section-header {
+  text-align: center;
+  color: #1A1A1A;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+  p {
+    opacity: 0.5;      
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
 .md-intuitive-wrapper {
   background: $white;
   color: #1A1A1A;
@@ -97,17 +122,7 @@ $md-container-max-widths: (
   padding: 50px 70px;
   
   .md-intuitive-header {
-    text-align: center;
     margin-bottom: 50px;
-    h2 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-    p {
-      opacity: 0.5;      
-      font-size: 18px;
-    }
   }
 
   .md-intuitive-col {
@@ -292,22 +307,9 @@ $md-container-max-widths: (
 }
 .md-suitable-wrapper {
   margin-top: 100px;
-  .md-suitable-header {
-    text-align: center;
-    margin-bottom: 30px;
-    h2 {
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 48px;
-    }
-    p {
-      opacity: 0.5;
-      color: #1A1A1A;
-      font-size: 18px;
-      line-height: 21px;
-    }
-  }
+
   .md-suitable-content {
+    margin-top: 30px;
     text-align: center;
   }
   .md-suitable-item {
@@ -337,39 +339,13 @@ $md-container-max-widths: (
   overflow: hidden;
   .md-proven-header {
     margin-top: 120px;
-    text-align: center;
-    h2 {
-      color: #FFFFFF;
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 48px;
-    }
-    p {
-      opacity: 0.5;
-      color: #FFFFFF;
-      font-size: 18px;
-      line-height: 21px;
-      text-align: center;
-    }
+    color: #FFFFFF;
   }
 }
 .md-features-wrapper {
   .md-features-header {
     margin-top: 120px;
-    text-align: center;
-    h2 {
-      color: #1A1A1A;
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 48px;
-    }
-    p {
-      opacity: 0.5;
-      color: #1A1A1A;
-      font-size: 18px;
-      line-height: 21px;
-      text-align: center;
-    }
+    margin-bottom: 80px;
   }
   .md-features-item {
     display: flex;
@@ -412,5 +388,128 @@ $md-container-max-widths: (
     color: #000000;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.md-pricing-wrapper {
+  margin-bottom: 50px;
+  .md-pricing-content {
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .md-national-btn-wrapper {
+    border: 1px solid rgba(26, 26, 26, 0.5);
+    border-radius: 10px;
+    height: 62px;
+    width: 615px;
+    margin: 50px auto;
+  }
+  .md-national-btn {
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.17px;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    @include size(150px, 60px);
+    
+    &.active {
+      background-color: white;
+      color: #F67D00;
+      box-shadow: 0 0 10px 0 rgba(246, 125, 0, 0.5);
+      line-height: 62px;
+      border-radius: 10px;
+      transform: scale(calc(62/60));
+      cursor: default;
+    }
+    &:not(.active):hover {
+      color: lighten(#1A1A1A, 50%);
+    }
+  }
+
+  .md-plan-col {
+    text-align: center;
+    border-left: 1px solid rgba(26, 26, 26, 0.1);
+    margin-bottom: 50px;
+    &:nth-child(1) {
+      border-left: none;
+    }
+  }
+  .md-plan-icon {
+    @include mdIcon(70px);
+    margin: 0 auto 30px;
+  }
+  .md-plan-name {
+    color: #1A1A1A;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    margin-bottom: 0;
+  }
+  .md-plan-cost {
+    color: #1A1A1A;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .md-plan-per-month {
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+  }
+
+  .md-plan-days-free-trial,
+  .md-plan-user,
+  .md-plan-extra-user,
+  .md-plan-cost-per-sms,
+  .md-plan-full-support {
+    opacity: 0.5;
+    color: #1A1A1A;
+    font-size: 14px;
+    line-height: 36px;
+    margin-bottom: 0;
+  }
+  .md-btn-sign-up {
+    margin-top: 40px;
+    padding: 18px 34px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.17px;
+  }
+  .md-optional-addons-title {
+    color: $md-main-text-color;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .md-optional-addons-subtext {
+    color: #1A1A1A;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .md-optional-addons-col {
+    padding: 0 80px;
+    color: #1A1A1A;
+    p:nth-child(2) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &:nth-child(1) {
+      border-right: 1px solid rgba(26, 26, 26, 0.1);
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0 15px;
+    }
   }
 }
