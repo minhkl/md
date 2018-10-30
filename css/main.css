@@ -7264,4 +7264,41 @@ body {
       .md-pricing-wrapper .md-optional-addons-col {
         padding: 0 15px; } }
 
+.md-blog-wrapper {
+  background-color: #283455; }
+  .md-blog-wrapper .md-blog-header {
+    color: #fff; }
+  .md-blog-wrapper .md-blog-post-col {
+    margin-bottom: 50px; }
+  .md-blog-wrapper .md-blog-post {
+    border-radius: 10px;
+    background-color: #fff;
+    color: #1A1A1A;
+    overflow: hidden;
+    height: 100%; }
+    .md-blog-wrapper .md-blog-post img {
+      width: 100%;
+      height: 300px; }
+  .md-blog-wrapper .md-blog-preview {
+    padding: 40px 50px; }
+    @media (max-width: 991.98px) {
+      .md-blog-wrapper .md-blog-preview {
+        padding: 20px; } }
+    @media (max-width: 767.98px) {
+      .md-blog-wrapper .md-blog-preview {
+        padding: 40px 50px; } }
+    .md-blog-wrapper .md-blog-preview h3 {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px; }
+    .md-blog-wrapper .md-blog-preview p {
+      margin-bottom: 0; }
+    .md-blog-wrapper .md-blog-preview .md-blog-content-preview {
+      opacity: 0.5;
+      font-size: 18px;
+      line-height: 24px; }
+    .md-blog-wrapper .md-blog-preview a {
+      font-weight: bold;
+      color: #F47D20; }
+
 /*# sourceMappingURL=main.css.map */
