@@ -7301,4 +7301,33 @@ body {
       font-weight: bold;
       color: #F47D20; }
 
+.md-privacy-wrapper {
+  background-color: #000;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+  .md-privacy-wrapper .md-privacy-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 482px;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px; }
+  .md-privacy-wrapper .md-privacy-socials {
+    color: #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px; }
+  .md-privacy-wrapper a {
+    color: #fff;
+    text-decoration: none; }
+    .md-privacy-wrapper a:hover {
+      color: #e6e6e6;
+      text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */

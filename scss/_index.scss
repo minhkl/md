@@ -559,3 +559,37 @@ $md-container-max-widths: (
     }
   }
 }
+.md-privacy-wrapper {
+  background-color: $black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  .md-privacy-items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 482px;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+  .md-privacy-socials {
+    color: #FFFFFF;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: darken($white, 10%);
+      text-decoration: none;
+    }
+  }
+}
