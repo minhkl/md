@@ -225,8 +225,7 @@ $md-container-max-widths: (
 
 .md-powerful-wrapper {
   background-color: $white;
-  margin-top: 148px;
-  margin-bottom: 131px;
+  margin-top: 128px;
   display: flex;
   justify-content: space-between;
 
@@ -263,6 +262,7 @@ $md-container-max-widths: (
       color: #1A1A1A;
       line-height: 24px;
       font-size: 18px;
+      margin-top: 25px;
     }
     .md-powerful-button-wrapper {
       margin-top: 60px;
@@ -304,7 +304,7 @@ $md-container-max-widths: (
   }
   
   .md-brand-logos {
-    height: 700px;
+    height: 620px;
     position: relative;
 
     @include media-breakpoint-down(md) {
@@ -446,7 +446,7 @@ $md-container-max-widths: (
   }
 }
 .md-suitable-wrapper {
-  margin-top: 100px;
+  margin-top: 110px;
 
   .md-suitable-content {
     margin-top: 30px;
@@ -519,18 +519,21 @@ $md-container-max-widths: (
       transform: scaleX(-1);
     }
   }
-  margin-top: 80px;
+  margin-top: 96px;
   overflow: hidden;
   .md-proven-header {
-    margin-top: 120px;
+    margin-top: 110px;
     color: #FFFFFF;
+    p {
+      margin-top: 25px;
+    }
   }
 
   .md-carousel {
     max-width: 1000px;
     width: 100%;
     height: 400px;
-    margin: 50px auto;
+    margin: 60px auto 40px;
     position: relative;
     @include media-breakpoint-only(md) {
       max-width: unset;
@@ -724,8 +727,8 @@ $md-container-max-widths: (
   .md-carousel-indicators {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
     .md-indicator {
+      font-size: 13px;
       margin: 0 5px;
       font-weight: 400;
       color: $white;
@@ -739,6 +742,7 @@ $md-container-max-widths: (
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin-top: 88px;
     @include media-breakpoint-only(xl) {
       margin-left: -15px;
       margin-right: -15px;
@@ -773,6 +777,7 @@ $md-container-max-widths: (
   }
 }
 .md-features-wrapper {
+  margin-top: 94px;
   .md-features-header {
     margin-top: 120px;
     margin-bottom: 80px;
@@ -824,7 +829,7 @@ $md-container-max-widths: (
   position: relative;
   .md-lower-part-background {
     position: absolute;
-    top: 30px;
+    top: 180px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -839,22 +844,26 @@ $md-container-max-widths: (
   
 }
 .md-pricing-wrapper {
-  margin-bottom: 50px;
+  margin-top: 50px;
   position: relative;
   
   .md-pricing-content {
+    margin-top: 50px;
     background: $white;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding-bottom: 70px;
+    @include media-breakpoint-down(md) {
+      padding-bottom: 30px;
+    }
   }
   .md-national-btn-wrapper {
     border: 1px solid rgba(26, 26, 26, 0.5);
     border-radius: 10px;
     height: 62px;
     width: 616px;
-    margin: 50px auto;
+    margin: 70px auto;
 
     @include media-breakpoint-down(sm) {
       width: 536px;
@@ -964,6 +973,12 @@ $md-container-max-widths: (
     text-align: center;
     margin-bottom: 50px;
   }
+  .md-optional-addons-row {
+    display: flex;
+    @include media-breakpoint-up(lg) {
+      padding: 0 50px;
+    }
+  } 
   .md-optional-addons-col {
     padding: 0 80px;
     color: #1A1A1A;
@@ -982,6 +997,8 @@ $md-container-max-widths: (
 .md-blog-wrapper {
   .md-blog-header {
     color: $white;
+    margin-top: 96px;
+    margin-bottom: 60px;
   }
   .md-blog-post-col {
     margin-bottom: 50px;
@@ -998,7 +1015,7 @@ $md-container-max-widths: (
     }
   }
   .md-blog-preview {
-    padding: 40px 50px;
+    padding: 30px 45px;
     @include media-breakpoint-down(md) {
       padding: 20px;
     }
