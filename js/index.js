@@ -1,19 +1,40 @@
-$(document).on('click', '.md-national-btn', function() {
+$(document).on('click', '.md-national-btn-wrapper .md-national-btn', function() {
   $('.md-national-btn.active').removeClass('active');
   $(this).addClass('active');
 
   const nation = $(this).data('nation');
   const data = PLANS[nation];
 
-  ['starter', 'small', 'team', 'large'].forEach(function(plan) {
-    $('.md-plan-' + plan).find('.md-plan-cost').text(data[plan].cost);
-    $('.md-plan-' + plan).find('.md-cost-per-extra-user').text(data[plan].costPerExtraUser);
-    $('.md-plan-' + plan).find('.md-cost-per-sms').text(data[plan].costPerSms);
-  });
+  updateDataPlanCost(data);
 });
+
+$(document).on('click', '.md-national-dropdown-option', function(e) {
+  e.preventDefault();
+
+  const nation = $(this).data('nation');
+  const data = PLANS[nation];
+
+  updateDataPlanCost(data);
+});
+
+function updateDataPlanCost(data) {
+  $("#md-selected-plan").text(data.name);
+
+  $(".md-plan-row").fadeOut(500, function() {
+    ['starter', 'small', 'team', 'large'].forEach(function(plan) {
+      $('.md-plan-' + plan).find('.md-plan-cost').text(data[plan].cost);
+      $('.md-plan-' + plan).find('.md-cost-per-extra-user').text(data[plan].costPerExtraUser);
+      $('.md-plan-' + plan).find('.md-cost-per-sms').text(data[plan].costPerSms);
+    });
+    $(".md-plan-row").fadeIn(500);
+  });
+
+  
+}
 
 const PLANS = {
   australia: {
+    name: 'Australia',
     monthUnit: '/ month + GST',
     starter: {
       cost: '$50.00',
@@ -37,6 +58,7 @@ const PLANS = {
     },
   },
   newZealand: {
+    name: 'New Zealand',
     monthUnit: '/ month',
     starter: {
       cost: 'NZD $50.00',
@@ -60,6 +82,7 @@ const PLANS = {
     },
   },
   unitedKingdom: {
+    name: 'United Kingdom',
     monthUnit: '/ month',
     starter: {
       cost: '£30',
@@ -83,6 +106,7 @@ const PLANS = {
     },
   },
   global: {
+    name: 'Global',
     monthUnit: '/ month',
     starter: {
       cost: 'USD $45.00',
