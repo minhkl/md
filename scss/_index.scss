@@ -62,17 +62,30 @@ $md-container-max-widths: (
   }
   .background {
     @include absolute();
-    background: url('../images/banner-top/background.png');
-    width: 1280px;
-    height: 855px;
-    left: 50%;
-    margin-left: -640px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      @media (max-width: 1280px) {
+        width: auto;
+      }
+    }
   }
   .gradient {
     @include absolute();
     background: url('../images/banner-top/gradient.png');
     width: 100%;
     height: 458px;
+  }
+  .white-mask {
+    @include absolute();
+    position: absolute;
+    background: white;
+    height: 451px;
+    width: 100%;
+    top: auto;
+    bottom: -418px;
+    transform: skewY(-11.3deg);
   }
 }
 .md-header {
@@ -829,7 +842,7 @@ $md-container-max-widths: (
   position: relative;
   .md-lower-part-background {
     position: absolute;
-    top: 180px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -839,6 +852,27 @@ $md-container-max-widths: (
       height: 2560px;
       width: 100%;
       background: url('../images/gradient.png') repeat-x;
+    }
+    .md-lower-white-mask {
+      position: absolute;
+      left: 0;
+      top: -200px;
+      background: white;
+      height: 500px;
+      width: 100%;
+      transform: skewY(11.6deg);
+    }
+    .md-blog-background {
+      position: absolute;
+      top: 900px;
+      left: 0;
+      width: 100%;
+      img {
+        width: 100%;
+        @media (max-width: 1280px) {
+          width: auto;
+        }
+      }
     }
   }
   
@@ -995,6 +1029,8 @@ $md-container-max-widths: (
   }
 }
 .md-blog-wrapper {
+  position: relative;
+  
   .md-blog-header {
     color: $white;
     margin-top: 96px;
