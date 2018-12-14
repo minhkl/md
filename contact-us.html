@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MechanicDesk</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css?v=200000000000" rel="stylesheet">
+
+    <link href="stylesheets/font-awesome.min.css?v=200000000000" rel="stylesheet">
+
+    <link href="stylesheets/style.css?v=200000000000" rel="stylesheet">
+
+    <link href="stylesheets/newStyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script src="javascripts/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="javascripts/html5shiv.js"></script>
+      <script src="javascripts/respond.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings-ie8.css" media="screen" />
+    <![endif]-->
+
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+      window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+      d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+      _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+      $.src='//v2.zopim.com/?2OEBa7DMXZtV4ocXWPzksoJ9eMN0QXwT';z.t=+new Date;$.
+      type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48176407-1', 'mechanicdesk.com.au');
+      ga('send', 'pageview');
+    </script>
+
+
+    <script type="text/javascript">
+      function validateForm() {
+        var error = false;
+
+        if (!$('#email').val()) {
+          $('#email-error').show();
+          error = true;
+        } else {
+          $('#email-error').hide();
+        }
+
+
+        if (!$('#message').val()) {
+          $('#message-error').show();
+          error = true;
+        } else {
+          $('#message-error').hide();
+        }
+
+        if (error) {
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </head>
+
+  <body>
+      <nav class="navbar md-navbar">
+          <div class="md-header-gradient"></div>
+          <div class="container-fluid md-container">
+            <div class="navbar-header md-navbar-header">
+              <a class="navbar-brand md-navbar-brand" href="index.html">
+                <img alt="MechanicDesk logo" src="images/logo.png">
+              </a>
+              <button type="button" class="navbar-toggle collapsed md-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse md-navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav md-navbar-nav">
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="support.html">Support/Demo</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Suitable For</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+                <li><a href="/blog/">Our Blog</a></li>
+                <li><a href="auto_workshop/login" class="btn btn-link btn-login">Login</a></li>
+                <li><a href="signup.html" class="btn btn-sign-up md-button">Sign Up</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
+
+    <section class="pagebanner">
+      <div class="container">
+        <div class="row col-md-12">
+          <h2 class="mainhead1">Contact us</h2>
+          <h5 class="subhead pricingpaddingbtm"> We always love hearing from you</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="partnerwrapper">
+      <div class="container">
+        <div class="col-xs-12 col-md-6 paddingtpbtm">
+          <div class="contactusbox">
+            <h1>Send us a Message</h1>
+            <form class="large" method="post" action="contact" onsubmit="return validateForm()">
+
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email <span style="color: red">*</span></label>
+                  <span id="email-error" style="color: red; display: none">
+                    Email is required
+                  </span>
+                  <input type="text" class="form-control" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" class="form-control" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span style="color: red">*</span></label>
+                  <span id="message-error" style="color: red; display: none">
+                    Message is required
+                  </span>
+                  <textarea id="message" name="message" class="form-control" rows="6"></textarea>
+                </div>
+
+                <button id="send-message-button" class="sendusmessagebtn">Send Message</button>
+              </form>
+          </div>                
+        </div>
+
+        <div class="col-xs-12  col-md-offset-1 col-md-5 paddingtpbtm">
+          <div class="contactusbox">
+            <h1 style="margin-bottom: -15px;">How to Reach Us</h1>
+
+            <div class="addressbox">
+              <h1><i class="fa fa-location-arrow" aria-hidden="true" style="color:#000;"></i>
+                Autodeck Pty. Ltd.</h1>
+              <div style="margin-top: -10px">
+                <p>Suite 101/757 Bourke St<br>
+                Docklands,<br> 
+                Victoria 3008, <br>
+                Australia 
+                </p>
+              </div>
+
+            </div>
+
+
+
+            <div class="hearbox">
+              <h1>We always love hearing from you.</h1> 
+              Please <span>Give us a call</span>
+              <div class="callbox">
+                <div class="callbox_left">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  Australia:
+                </div>
+
+                <div class="callbox_right">
+                  1300 737 100
+
+                </div>
+                <div class="clearfix"></div>
+
+              </div>
+
+              <div class="callbox">
+                <div class="callbox_left">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  New Zealand:
+                </div>
+
+                <div class="callbox_right">
+                  0800 110 259
+
+                </div>
+                <div class="clearfix"></div>
+
+              </div>
+              <div class="callbox">
+                <div class="callbox_left">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  United Kingdom:
+                </div>
+
+                <div class="callbox_right">0800 178 0486</div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="callbox">
+                <div class="callbox_left">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  Global: 
+                </div>
+
+                <div class="callbox_right">
+                  +61 3 8640 0964
+
+                </div>
+                <div class="clearfix"></div>
+
+              </div>
+
+
+              <div class="callbox">
+                <div class="callbox_left">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                  Email 
+                </div>
+
+                <div class="callbox_right">
+                  <a href="mailto:contact@mechanicdesk.com.au"> contact@mechanicdesk.com.au</a>
+
+                </div>
+                <div class="clearfix"></div>
+
+              </div>
+            </div>
+          </div>                
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Google Map Start-->
+  <div class="container-fluid">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.5187944224804!2d144.94851081531837!3d-37.80131557975467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d307d14a73d%3A0x6e4b6c203c864d9f!2s757+Bourke+St%2C+Docklands+VIC+3008%2C+Australia!5e0!3m2!1sen!2sin!4v1501921027016" width="100%" min-height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <!-- Free Trial Start-->
+  <section class="freetrialwrapper">
+    <div class="container text-center">
+      <a href="signup.html"><button class="freetrialbtn">Start your 14 Days <span>Free</span> Trial</button></a>
+    </div>
+  </section>
+
+  <footer>
+      <div class="md-footer-background"></div>
+      <div class="md-container md-privacy-wrapper">
+        <div class="md-privacy-logo"><img src="./images/logoWithText.png" alt="mechanicdesk" /></div>
+        <div class="md-privacy-items">                
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="md-privacy-socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="md-container md-download-now-wrapper">
+        <!-- <div class="row"> -->
+            <div class="md-left-col">
+              <div class="md-left-col-top">
+                <div class="md-contact">
+                  <p>
+                    <b>Autodeck Pty. Ltd.</b><br />
+                    Suite 101/757 Bourke St, Docklands<br />
+                    Victoria 3008, Australia
+                  </p>
+                  <p>
+                    Australia: <b>1300 737 100</b><br />
+                    New Zealand: <b>0800 110 259</b><br />
+                    United Kingdom: <b>0808 178 0486</b><br />
+                    Global: <b>+61 3 8640 0964</b>
+                  </p>
+                </div>
+                <div class="md-mobile-app-download">
+                  <p class="md-title">Download MechanicDesk Now!</p>
+                  <p class="md-download-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  <div class="md-download-app-button-wrapper">
+                    <a href="#" class="btn md-btn-primary md-download-app-button">
+                      <i class="fab fa-apple"></i>
+                      <div class="md-btn-text">
+                        <div>Available on the</div>
+                        <div>App Store</div>
+                      </div>
+                    </a>
+                    <a href="#" class="btn md-btn-primary md-download-app-button">
+                      <i class="fab fa-google-play"></i>
+                      <div class="md-btn-text">
+                        <div>Get it on</div>
+                        <div>Google Play</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="md-about-us">
+                <b>About us</b><br />
+                MechanicDesk is a product of Autodeck Pty. Ltd.<br />
+                We are a web based company providing innovative ideas for people and businesses. We are passionate about creating products that help people solve everyday problems and make their lives easier. We will always work hard to please our customers and are always happy to do business with you.
+              </div>
+            </div>
+            <div class="md-right-col">
+              <img src="./images/iphone-mockup-okorkmaz.png" />
+            </div>
+        <!-- </div> -->
+      </div>
+      <div class="md-container md-copyright-wrapper">
+          Copyright 2014 - 2018. MechanicDesk. All rights reserved.
+      </div>
+    </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="javascripts/bootstrap.min.js"></script>
+</body>
+</html>

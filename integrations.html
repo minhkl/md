@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MechanicDesk Workshop Software Integrations</title>
+
+    <meta name="description" content="MechanicDesk Workshop Software Integrations, Supplier System Integrations, Accounting Software Integrations">
+    <meta name="keywords" content="MechanicDesk Workshop Software Integrations, Repco Integration, Ezyparts Integration, Xero Integration, MYOB Integration, Quickbooks Integration">
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css?v=200000000000" rel="stylesheet">
+    <link href="stylesheets/font-awesome.min.css?v=200000000000" rel="stylesheet">
+    <link href="stylesheets/style.css?v=200000000000" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="javascripts/html5shiv.js"></script>
+      <script src="javascripts/respond.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings-ie8.css" media="screen" />
+    <![endif]-->
+
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+      window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+      d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+      _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+      $.src='//v2.zopim.com/?2OEBa7DMXZtV4ocXWPzksoJ9eMN0QXwT';z.t=+new Date;$.
+      type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48176407-1', 'mechanicdesk.com.au');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="MechanicDesk logo" class="img-responsive"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="testimonials.html">
+                  <i class="material-icons" style="font-size: inherit">star</i>
+                  Testimonials
+                </a>
+              </li>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="support.html">Support/Demo</a></li>
+              <li><a href="index.html#pricing">Pricing</a></li>
+              <li>
+                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer">
+                  Integrations
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="integrations.html">All Integrations</a></li>
+                  <li><a href="addon-xero.html">Xero</a></li>
+                  <li><a href="addon-myob.html">MYOB</a></li>
+                  <li><a href="addon-navigator-pro.html">Repco Navigator Pro</a></li>
+                  <li><a href="addon-burson-ezyparts.html">Burson EzyParts</a></li>
+                  <li><a href="addon-mailchimp.html">Mailchimp</a></li>
+                  <li><a href="addon-active-campaign.html">ActiveCampaign</a></li>
+                </ul>
+              </li>
+              <li>
+                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer">
+                  Partners
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <li><a href="partner-list.html">Our Partners</a></li>
+                  <li><a href="partners.html">Our Partner Program</a></li>
+                  <li><a href="partner/partner/login">Partner Login</a></li>
+                </ul>
+              </li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+              <li><a href="/blog/">Our Blog</a></li>
+              <li><div class="signupbtn"><a href="signup.html" >SIGN UP</a></div></li>
+              <li><div class="lgooutbtn"><a href="auto_workshop/login"  >LOGIN</a></div></li>
+
+
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </header>
+
+    <section class="pagebanner">
+      <div class="container">
+        <div class="row col-md-12">
+          <h2 class="mainhead1">Powerful Integrations </h2>
+          <h5 class="subhead pricingpaddingbtm"> Supercharge your MechanicDesk with our powerful partner integrations</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="partnerwrapper">
+      <div class="container">
+        <div class="col-xs-12 col-md-12 paddingtpbtm">
+          <p>We understand the wide range of utitilies required to run a workshop and a business effectively, everything from part look up and ordering to financial accounting 
+          and customer relations management. With our partner integrations, we aim to help provide you with the best tools that you will need for every aspect of your business.</p>
+        </div>
+
+      </div>
+
+      <!-- yellow wrapper Start-->
+
+      <div class="container">
+        <div class="choosewrapper">
+          <h1>Browse our complete list of integrations:</h1>
+
+          <div style="text-align: center">
+            <button id="accounting" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px; background: orange">Accounting</button>
+            <button id="supplier" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px;">Supplier</button>
+            <button id="marketing" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px;">Mass Mail/CRM</button>
+            <button id="eftpos" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px;">EFTPOS Terminals</button>
+            <button id="vlookup" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px;">Vehicle Look Up</button>
+            <button id="royalty" type="button" class="freetrialbtn" style="margin: 5px; font-size: 14px;">Royalty Programmes</button>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+      </div>
+
+      <!-- yellow wrapper End-->
+
+
+      <!-- Reseller Start-->
+
+      <div class="container resellerwrapper">
+
+        <div class="row integration accounting" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/xero.jpg" style="width: 50%;" alt="Xero logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Xero</span></h4>
+            <div class="integrations">
+              <ul>
+                <li> Xero is an easy-to-use but powerful online accounting software designed for the cloud. Xero accounting software is made for small business owners.</li>
+                <li>MechanicDesk currently integrates with all versions of Xero.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.xero.com/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.xero.com/</a></div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row integration accounting" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/myob.jpg" style="widht: 85%;" alt="MYOB logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">MYOB</span> </h4>
+            <div class="integrations">
+              <ul>
+                <li>MYOB, Mind Your Own Business, is an Australian multinational corporation that provides tax, accounting and other services to small and medium businesses.</li>
+                <li> MechanicDesk currently integrates with MYOB AccountRight and MYOB Essentials (online versions only).</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.myob.com/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.myob.com/</a></div>
+            </div>
+          </div>
+        </div>         
+
+
+
+        <div class="row integration accounting" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/quickbooks.png" style="width: 80%;" alt="QuickBooks logo"> </div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Intuit QuickBooks</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>QuickBooks is Intuit's set of software solutions designed to manage payroll, inventory, sales and other needs of a small business. The software features marketing tools, merchant services, product and supplies, as well as training solutions.</li>
+                <li>MechanicDesk currently integrates with QuickBooks Online.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.intuit.com.au/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.intuit.com.au/</a></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/repco_navigator.png" style="width: 100%;" alt="Repco Navigator Pro logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Repco Navigator Pro</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Navigator Pro is Repco's Online parts ordering solution available for trade account customers so you can order parts without picking up the phone, saving you time, effort and money in your workshop.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.repcotrade.com.au" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.repcotrade.com.au</a></div>
+            </div>
+          </div>
+        </div>          
+
+
+
+
+
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/burson_ezy_parts.png" style="width:100%" alt="Burson EzyParts logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Burson EzyParts</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Burson EzyParts is Burson's Online parts ordering solution available for trade account customers so you can order parts without picking up the phone, saving you time, effort and money in your workshop.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.burson.com.au/trade-centre/ezyparts/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.burson.com.au/trade-centre/ezyparts/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/quantum_pro.png" style="width: 100%;" alt="Quantum Pro logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Quantum Pro</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Quantum Pro is Ashdown Ingram's online parts look up platform, giving you access to Australasia's largest range of automotive electrical and thermal control parts 24/7, all year round.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.quantumpro.com.au" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.quantumpro.com.au/</a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/pro_link.png" style="width: 100%;" alt="Covs ProLink logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Covs ProLink</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Covs online ordering system available free of charge to Covs trade accounts.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.covsparts.com.au/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.covsparts.com.au/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/autopro_logo.jpg" style="width: 100%" alt="Autopro logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Autopro</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Autopro is the online ordering platform for Autopro Parts Professionals, Australia’s oldest and largest independent automotive aftermarket parts and accessories retailer.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.autopro.com.au/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.autopro.com.au/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration supplier" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/motospecs.jpg" style="width: 100%" alt="Motospecs logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Motospecs</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Motospecs is a specialist importer and distributor of various under vehicle and under bonnet aftermarket products including drivetrain, power steering, engine management, fuel systems and braking.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.motospecs.com.au/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.motospecs.com.au/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration marketing" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/mailchimp.jpeg" style="width: 100%" alt="MailChimp logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">MailChimp</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>MailChimp is a marketing automation platform and an email marketing service. MailChimp's operator is the American based company Rocket Science Group.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.mailchimp.com/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.mailchimp.com/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration marketing" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/activecampaign.png" style="width: 100%" alt="Active Campaign logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Active Campaign</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Active Campaign is a cloud-based customer relationship management (CRM) and marketing automation platform.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.activecampaign.com" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.activecampaign.com </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration eftpos" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/tyro.png" style="width: 50%" alt="Tyro Payments logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">Tyro Payments</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>Tyro Payments Ltd is an Australian based financial technology institution.</li>
+                <li>MechanicDesk currently integrates with Tyro EFTPOS terminals to streamline EFTPOS payment processes in MechanicDesk.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.tyro.com/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.tyro.com/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration vlookup" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/carjam.png" style="width: 50%" alt="CarJam logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">CarJam (New Zealand only)</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>CarJam is a New Zealand based online service offering automotive information and history look up services.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.carjam.co.nz/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.carjam.co.nz/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration vlookup" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/mycarcheck.jpg" style="width: 100%" alt="MyCarCheck logo"></div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">MyCarCheck (United Kingdom only)</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>My Car Check is a British vehicle history checking company owned by CDL Vehicle Information Services.</li>
+              </ul>
+            </div>
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.mycarcheck.com/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.mycarcheck.com/ </a></div>
+            </div>
+          </div>
+        </div>                      
+
+        <div class="row integration royalty" style="margin-bottom:35px;">
+
+
+          <div class="col-xs-12 col-md-3 versticalmiddle ">
+            <img src="images/ams_rewards.png" style="width: 100%" alt="AMS Rewards logo">
+            <img src="images/australian_motoring_clubs.png" style="width: 100%" alt="AMS Rewards logo">
+          </div>
+
+
+          <div class="col-xs-12 col-md-9 leftborder">
+            <h4><span class="heading">AMS Rewards (Australia only)</span></h4>
+            <div class="integrations">
+              <ul>
+                <li>AMS Rewards, part of Australian Motoring Services (AMS), is the driving force behind the Australian Auto Club’s Show Your Card and Save Program, which offers Members high value discounts at a range of retailers and on goods and services throughout Australia.</li>
+              </ul>
+            </div>
+
+            <div class="linediviner">
+              <div class="partner-gallery-contact"> <a href="http://www.sycs.com.au/" target="_parent"><i class="fa fa-globe" aria-hidden="true"></i> http://www.sycs.com.au/ </a></div>
+            </div>
+          </div>
+        </div>                      
+      </div>
+
+
+      <!-- Reseller End-->
+
+
+
+    </div>
+
+  </section>
+
+    <section class="freetrialwrapper">
+      <div class="container text-center">
+        <a href="signup.html"><button class="freetrialbtn">Start your 14 Days <span>Free</span> Trial</button></a>
+      </div>
+    </section>
+    
+    <footer class="ftrwrapper">
+      <div class="container">
+        <div class=" col-xs-12 col-md-6 ftrlinkbox">
+          <h5>About us</h5>
+          <strong>MechanicDesk</strong> is a product of <strong>Autodeck Pty. Ltd.</strong><br>
+          <p>We are a web based company providing innovative ideas for people and businesses. We are passionate about creating products that help people solve everyday problems and make their lives easier. We will always work hard to please our customers and are always happy to do business with you.</p>
+          <a href="#">read more</a>         
+        </div>	
+
+        <div class=" col-xs-12 col-md-3 ftrlinkbox">
+          <h5>Useful Links</h5>
+          <ul class="ftrlinkbox">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>	
+            <li><a href="terms-and-conditions.html">Terms of Service</a></li>	
+            <li><a href="index#pricings"/>Pricing</a></li>	
+            <li><a href="contact-us.html">Contact us</a></li>                  
+            <li style="margin-top: 10px;">
+              <a href="http://appstore.com/mechanicdesk" style="margin-right: 10px; margin-top: 10px;"><img width="100px" src="/images/appstore.png"></a>
+              <a href="https://play.google.com/store/apps/details?id=org.nativescript.MechanicDeskApp" style="margin-top: 10px"><img width="100px" src="/images/playstore.png"></a>
+            </li>
+          </ul>    
+        </div>	
+
+        <div class=" col-xs-12 col-md-3 ftrlinkbox">
+          <h5>Contact Us</h5>
+          <ul class="ftrlinkbox">
+            <li><strong>Autodeck Pty. Ltd.</strong></li>	
+            <li>Suite 101/757 Bourke St, Docklands</li>
+            <li>Victoria 3008, Australia</li>                  
+            <li>Australia: <span>1300 737 100</span> </li>	
+            <li>New Zealand: <span>0800 110 259</span>  </li>	
+            <li>United Kingdom:  <span>  0808 178 0486</span></li>	
+            <li>Global: <span>  +61 3 8640 0964</span> </li> 
+          </ul>    
+        </div>
+      </div>
+
+
+      <div class="container ftrdivline"></div>
+      <!-- Btm Footer Start-->
+
+      <div class="container ">
+        <div class=" col-xs-6 col-md-6">
+          <div class="copyright">
+            <div class="copyrightleft"><img src="images/footer_left_img.png" width="62" height="64" alt="Copyright sign"></div>
+            <div class="copyrightright">Copyright 2014 - 2017 · All rights reserved.</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+
+        <div class=" col-xs-6 col-md-6">
+          <div class="social">
+            <div class="socialleft"><a href="http://www.facebook.com/mechanicdesk"><img src="images/fb.png" width="47" height="47" alt="Facebook logo"></a></div>
+            <div class="socialleft"><a href="https://twitter.com/mechanicdesk"><img src="images/twitter.png" width="47" height="47" alt="Twitter logo"></a></div>
+        <!--     <div class="socialleft"><a href=""><img src="images/link.png" width="47" height="47" alt=""></a></div> -->
+        <!--     <div class="clearfix"></div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/js.cookie.js"></script>
+    <script>
+    $(document).ready(function() {
+      $(".row.integration:not(.accounting)").hide();
+      $("#accounting").click(function() {
+        if($(".row.integration.accounting:first").is(':visible') === false) {
+          $(".row.integration.accounting").show();
+          $(".row.integration:not(.accounting)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#accounting)").css("background", "white");
+        }
+      });
+      $("#supplier").click(function() {
+        if($(".row.integration.supplier:first").is(':visible') === false) {
+          $(".row.integration.supplier").show();
+          $(".row.integration:not(.supplier)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#supplier)").css("background", "white");
+        }
+      });
+      $("#marketing").click(function() {
+        if($(".row.integration.marketing:first").is(':visible') === false) {
+          $(".row.integration.marketing").show();
+          $(".row.integration:not(.marketing)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#marketing)").css("background", "white");
+        }
+      });
+      $("#eftpos").click(function() {
+        if($(".row.integration.eftpos:first").is(':visible') === false) {
+          $(".row.integration.eftpos").show();
+          $(".row.integration:not(.eftpos)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#eftpos)").css("background", "white");
+        }
+      });
+      $("#vlookup").click(function() {
+        if($(".row.integration.vlookup:first").is(':visible') === false) {
+          $(".row.integration.vlookup").show();
+          $(".row.integration:not(.vlookup)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#vlookup)").css("background", "white");
+        }
+      });
+      $("#royalty").click(function() {
+        if($(".row.integration.royalty:first").is(':visible') === false) {
+          $(".row.integration.royalty").show();
+          $(".row.integration:not(.royalty)").hide();
+          $(this).css("background", "orange");
+          $("button:not(#royalty)").css("background", "white");
+        }
+      });
+
+      // Switch to proper section when linking from other pages
+      $(document).ready(function() {
+        if(window.location.hash === "#supplier")
+        {
+          $(".row.integration.supplier").show();
+          $(".row.integration:not(.supplier)").hide();
+          $("#supplier").css("background", "orange");
+          $("button:not(#supplier)").css("background", "white");
+        }
+        if(window.location.hash === "#eftpos")
+        {
+          $(".row.integration.eftpos").show();
+          $(".row.integration:not(.eftpos)").hide();
+          $("#eftpos").css("background", "orange");
+          $("button:not(#eftpos)").css("background", "white");
+        }
+      });
+
+    });
+    </script>
+
+    <!-- tracking ad campaign -->
+    <script type="text/javascript">
+      function getUrlParameter(sParam)
+      {
+          var sPageURL = window.location.search.substring(1);
+          var sURLVariables = sPageURL.split('&');
+          for (var i = 0; i < sURLVariables.length; i++) 
+          {
+              var sParameterName = sURLVariables[i].split('=');
+              if (sParameterName[0] == sParam) 
+              {
+                  return sParameterName[1];
+              }
+          }
+      }          
+
+      jQuery(document).ready(function() {
+        var campaign = getUrlParameter('c');
+        if(campaign && campaign.length > 0) {
+          var Cookies2 = Cookies.noConflict();
+          Cookies2.set("campaign", campaign);
+        }
+      });
+    </script>
+  </body>
+</html>
