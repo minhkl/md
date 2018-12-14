@@ -317,6 +317,7 @@ footer {
           footer .md-download-now-wrapper .md-download-app-button div:last-child {
             font-size: 15px; } }
   footer .md-copyright-wrapper {
+    position: relative;
     border-top: 1px solid rgba(216, 216, 216, 0.15);
     color: rgba(255, 255, 255, 0.3);
     text-align: center;

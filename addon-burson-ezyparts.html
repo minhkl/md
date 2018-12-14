@@ -10,6 +10,9 @@
     <link href="stylesheets/bootstrap.min.css?v=200000000000" rel="stylesheet">
     <link href="stylesheets/font-awesome.min.css?v=200000000000" rel="stylesheet">
     <link href="stylesheets/style.css?v=200000000000" rel="stylesheet">
+    <link href="stylesheets/newStyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,67 +46,35 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="150">
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="MechanicDesk logo" class="img-responsive"></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="testimonials.html">
-                  <i class="material-icons" style="font-size: inherit">star</i>
-                  Testimonials
-                </a>
-              </li>
-              <li><a href="index.html#features">Features</a></li>
-              <li><a href="support.html">Support/Demo</a></li>
-              <li><a href="index.html#pricing">Pricing</a></li>
-              <li>
-                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer">
-                  Integrations
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  <li><a href="integrations.html">All Integrations</a></li>
-                  <li><a href="addon-xero.html">Xero</a></li>
-                  <li><a href="addon-myob.html">MYOB</a></li>
-                  <li><a href="addon-navigator-pro.html">Repco Navigator Pro</a></li>
-                  <li><a href="addon-burson-ezyparts.html">Burson EzyParts</a></li>
-                  <li><a href="addon-mailchimp.html">Mailchimp</a></li>
-                  <li><a href="addon-active-campaign.html">ActiveCampaign</a></li>
-                </ul>
-              </li>
-              <li>
-                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer">
-                  Partners
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  <li><a href="partner-list.html">Our Partners</a></li>
-                  <li><a href="partners.html">Our Partner Program</a></li>
-                  <li><a href="partner/partner/login">Partner Login</a></li>
-                </ul>
-              </li>
-              <li><a href="./contact-us.html">Contact Us</a></li>
-              <li><a href="/blog/">Our Blog</a></li>
-              <li ><div class="signupbtn"><a href="signup.html" >SIGN UP</a></div></li>
-              <li><div class="lgooutbtn"><a href="auto_workshop/login"  >LOGIN</a></div></li>
-
-
-            </ul>
-          </div><!--/.nav-collapse -->
+    <nav class="navbar md-navbar">
+      <div class="md-header-gradient"></div>
+      <div class="container-fluid md-container">
+        <div class="navbar-header md-navbar-header">
+          <a class="navbar-brand md-navbar-brand" href="index.html">
+            <img alt="MechanicDesk logo" src="images/logo.png">
+          </a>
+          <button type="button" class="navbar-toggle collapsed md-navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </nav>
-    </header>
+        <div class="collapse navbar-collapse md-navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav md-navbar-nav">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="support.html">Support/Demo</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Suitable For</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+            <li><a href="/blog/">Our Blog</a></li>
+            <li><a href="auto_workshop/login" class="btn btn-link btn-login">Login</a></li>
+            <li><a href="signup.html" class="btn btn-sign-up md-button">Sign Up</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
 
     <br/>
     <br/>
@@ -243,66 +214,72 @@
       <br/>
     </div>
 
-    <footer class="ftrwrapper">
-      <div class="container">
-        <div class=" col-xs-12 col-md-6 ftrlinkbox">
-          <h5>About us</h5>
-          <strong>MechanicDesk</strong> is a product of <strong>Autodeck Pty. Ltd.</strong><br>
-          <p>We are a web based company providing innovative ideas for people and businesses. We are passionate about creating products that help people solve everyday problems and make their lives easier. We will always work hard to please our customers and are always happy to do business with you.</p>
-          <a href="#">read more</a>         
-        </div>	
-
-        <div class=" col-xs-12 col-md-3 ftrlinkbox">
-          <h5>Useful Links</h5>
-          <ul class="ftrlinkbox">
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>	
-            <li><a href="terms-and-conditions.html">Terms of Service</a></li>	
-            <li><a href="index#pricings"/>Pricing</a></li>	
-            <li><a href="contact-us.html">Contact us</a></li>                  
-            <li style="margin-top: 10px;">
-              <a href="http://appstore.com/mechanicdesk" style="margin-right: 10px; margin-top: 10px;"><img width="100px" src="/images/appstore.png"></a>
-              <a href="https://play.google.com/store/apps/details?id=org.nativescript.MechanicDeskApp" style="margin-top: 10px"><img width="100px" src="/images/playstore.png"></a>
-            </li>
-          </ul>    
-        </div>	
-
-        <div class=" col-xs-12 col-md-3 ftrlinkbox">
-          <h5>Contact Us</h5>
-          <ul class="ftrlinkbox">
-            <li><strong>Autodeck Pty. Ltd.</strong></li>	
-            <li>Suite 101/757 Bourke St, Docklands</li>
-            <li>Victoria 3008, Australia</li>                  
-          </ul>    
-          <ul class="ftrlinkbox">
-            <li>Australia: <span>1300 737 100</span> </li>	
-            <li>New Zealand: <span>0800 110 259</span>  </li>	
-            <li>United Kingdom:  <span>  0808 178 0486</span></li>	
-            <li>Global: <span>  +61 3 8640 0964</span> </li> 
-          </ul>    
+    <footer>
+      <div class="md-footer-background"></div>
+      <div class="md-container md-privacy-wrapper">
+        <div class="md-privacy-logo"><img src="./images/logoWithText.png" alt="mechanicdesk" /></div>
+        <div class="md-privacy-items">                
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms of Service</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="contact-us.html">Contact us</a>
+        </div>
+        <div class="md-privacy-socials">
+          <a href="http://www.facebook.com/mechanicdesk"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/mechanicdesk"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-
-
-      <div class="container ftrdivline"></div>
-      <!-- Btm Footer Start-->
-
-      <div class="container ">
-        <div class=" col-xs-6 col-md-6">
-          <div class="copyright">
-            <div class="copyrightleft"><img src="images/footer_left_img.png" width="62" height="64" alt="Copyright sign"></div>
-            <div class="copyrightright">Copyright 2014 - 2017 · All rights reserved.</div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-
-        <div class=" col-xs-6 col-md-6">
-          <div class="social">
-            <div class="socialleft"><a href="http://www.facebook.com/mechanicdesk"><img src="images/fb.png" width="47" height="47" alt="Facebook logo"></a></div>
-            <div class="socialleft"><a href="https://twitter.com/mechanicdesk"><img src="images/twitter.png" width="47" height="47" alt="Twitter logo"></a></div>
-        <!--     <div class="socialleft"><a href=""><img src="images/link.png" width="47" height="47" alt=""></a></div> -->
-        <!--     <div class="clearfix"></div> -->
-          </div>
-        </div>
+      <div class="md-container md-download-now-wrapper">
+        <!-- <div class="row"> -->
+            <div class="md-left-col">
+              <div class="md-left-col-top">
+                <div class="md-contact">
+                  <p>
+                    <b>Autodeck Pty. Ltd.</b><br />
+                    Suite 101/757 Bourke St, Docklands<br />
+                    Victoria 3008, Australia
+                  </p>
+                  <p>
+                    Australia: <b>1300 737 100</b><br />
+                    New Zealand: <b>0800 110 259</b><br />
+                    United Kingdom: <b>0808 178 0486</b><br />
+                    Global: <b>+61 3 8640 0964</b>
+                  </p>
+                </div>
+                <div class="md-mobile-app-download">
+                  <p class="md-title">Download MechanicDesk Now!</p>
+                  <p class="md-download-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  <div class="md-download-app-button-wrapper">
+                    <a href="#" class="btn md-btn-primary md-download-app-button">
+                      <i class="fab fa-apple"></i>
+                      <div class="md-btn-text">
+                        <div>Available on the</div>
+                        <div>App Store</div>
+                      </div>
+                    </a>
+                    <a href="#" class="btn md-btn-primary md-download-app-button">
+                      <i class="fab fa-google-play"></i>
+                      <div class="md-btn-text">
+                        <div>Get it on</div>
+                        <div>Google Play</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="md-about-us">
+                <b>About us</b><br />
+                MechanicDesk is a product of Autodeck Pty. Ltd.<br />
+                We are a web based company providing innovative ideas for people and businesses. We are passionate about creating products that help people solve everyday problems and make their lives easier. We will always work hard to please our customers and are always happy to do business with you.
+              </div>
+            </div>
+            <div class="md-right-col">
+              <img src="./images/iphone-mockup-okorkmaz.png" />
+            </div>
+        <!-- </div> -->
+      </div>
+      <div class="md-container md-copyright-wrapper">
+          Copyright 2014 - 2018. MechanicDesk. All rights reserved.
       </div>
     </footer>
 
