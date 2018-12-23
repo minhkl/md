@@ -1,3 +1,26 @@
+$(function() {
+  var randomTestimonials =  allTestimonials.sort(function() {return 0.5 - Math.random()}).slice(0, 4);
+  var elements = [];
+  var carouselClasses = ['active', 'right', 'hidden', 'left'];
+  var carousel = $('#testimonials-carousel');
+  $.each(randomTestimonials, function(index, testimonial) {
+    var carouselClass = carouselClasses[index];
+    var html = ''+
+      '<div class="md-carousel-item '+carouselClass+'">'+
+        '<p class="md-quotation-mark">'+
+          '<i class="md-single-quotation-mark"></i>'+
+          '<i class="md-single-quotation-mark"></i>'+
+        '</p>'+
+        '<p class="md-text">'+ (testimonial.short_text || testimonial.text) +'</p>'+
+        '<p class="md-user">'+ testimonial.person +'</p>'+
+        '<p class="md-organize">'+ testimonial.company +'</p>'+
+      '</div>';
+      carousel.append(html);
+  });
+
+});
+
+
 var allTestimonials = [
   {
     person: 'Aleisha',

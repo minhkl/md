@@ -624,17 +624,53 @@ $md-container-max-widths: (
       color: #1A1A1A;
       font-size: 18px;
       font-style: italic;
-      line-height: 1.3;
-      height: 150px;
+      // line-height: 1.3;
+      // height: 150px;
 
+      /* hide text if it more than N lines  */
+      overflow: hidden;
+      /* for set '...' in absolute position */
+      position: relative; 
+      /* use this value to count block height */
+      line-height: 1.3em;
+      /* max-height = line-height (1.2) * lines max number (3) */
+      max-height: 9.1em; 
+      /* fix problem when last visible word doesn't adjoin right side  */
+      text-align: justify;  
+      /* place for '...' */
+      margin-right: -1em;
+      padding-right: 1em;
+      &:before {
+        /* points in the end */
+        content: '...';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of block */
+        right: 0;
+        bottom: 0;
+      }
+      &:after {
+        /* points in the end */
+        content: '';
+        /* absolute position */
+        position: absolute;
+        /* set position to right bottom corner of text */
+        right: 0;
+        /* set width and height */
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        /* bg color = bg color under block */
+        background: white;
+      }
       @include media-breakpoint-down(md) {
-        height: 250px;
+        max-height: 14.3em; 
       }
       @include media-breakpoint-only(xs) {
         margin-top: 10px;
         font-size: 16px;
-        line-height: 1.5;
-        height: 330px;
+        line-height: 1.5em;
+        max-height: 21em;
       }
     }
     .md-user {
