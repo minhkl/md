@@ -28,8 +28,6 @@ function updateDataPlanCost(data) {
     });
     $(".md-plan-row").fadeIn(500);
   });
-
-  
 }
 
 const PLANS = {
@@ -130,3 +128,12 @@ const PLANS = {
     },
   },
 }
+
+$(document).on('click', '.md-features-item', function() {
+  var toggle = $(this).find('.md-toggle-description');
+  if (toggle.is(':hidden')) {
+    toggle.slideDown();
+  } else {
+    toggle.slideUp();
+  }
+});

@@ -8,6 +8,9 @@ body {
 .md-btn-primary {
   @include button-variant($md-main-color, $md-main-color);
 }
+.orange {
+  color: orange;
+}
 @mixin mdIcon($size) {
   @include size($size);
   border-radius: 5px;
@@ -472,37 +475,42 @@ $md-container-max-widths: (
   }
   .md-suitable-item {
     position: relative;
-    @include size(340px);
-    @include media-breakpoint-only(xs) {
-      @include size(300px);
-      margin: 10px;
-    }
+    @include size(190px);
     display: inline-block;
     box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
-    margin: 18px;
+    margin: 18px 10px;
     border-radius: 10px;
     p {
       width: 100%;
       position: absolute;
       color: #1A1A1A;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: bold;
-      line-height: 24px;
       text-align: center;
       transform: translateX(-50%);
       left: 50%;
-      bottom: 30px;
+      bottom: 0;
+      padding: 0 10px;
+    }
+    p.md-heavy-machinery-label,
+    p.md-bikes-label {
+      bottom: -5px;
     }
     img {
       position: absolute;
       transform: translateX(-50%);
-      bottom: 120px;
+      bottom: 70px;
+      width: 90%;
+
+    }
+    img.md-bikes {
+      bottom: 50px;
     }
     img.md-tyres-spare {
-      bottom: 100px;
+      bottom: 44px;
     }
     img.md-heavy-machinery {
-      bottom: 110px;
+      bottom: 50px;
     }
   }
 }
@@ -776,6 +784,7 @@ $md-container-max-widths: (
   .md-carousel-indicators {
     display: flex;
     justify-content: center;
+    margin-bottom: 88px;
     .md-indicator {
       font-size: 13px;
       margin: 0 5px;
@@ -831,17 +840,23 @@ $md-container-max-widths: (
     margin-top: 120px;
     margin-bottom: 80px;
   }
+  .md-features-item-wrapper {
+    margin-top: 20px;
+    min-height: 140px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 200px;
+    }
+    @include media-breakpoint-down(sm) {
+      min-height: unset;
+    }
+  }
   .md-features-item {
     display: flex;
     flex-flow: row;
-    margin-top: 20px;
-    height: 140px;
-    
-    @include media-breakpoint-down(md) {
-      height: 200px;
-    }
-    @include media-breakpoint-down(sm) {
-      height: auto;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffddbc;
     }
   }
   .md-item-left {
@@ -872,6 +887,15 @@ $md-container-max-widths: (
     color: #000000;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 0;
+  }
+  .md-toggle-description {
+    display: none;
+    width: calc(100% + 40px);
+    margin-left: -40px;
+  }
+  li.no-list-style {
+    list-style-type: none;
   }
 }
 .md-lower-part {

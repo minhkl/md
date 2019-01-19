@@ -196,6 +196,33 @@
       .md-navbar .btn-sign-up:not(:disabled):not(.disabled):active:focus, .md-navbar .btn-sign-up:not(:disabled):not(.disabled).active:focus, .show > .md-navbar .btn-sign-up.dropdown-toggle:focus {
         box-shadow: 0 0 0 0.2rem rgba(242, 113, 29, 0.5); }
 
+.freetrialwrapper .btn-sign-up {
+  margin: 50px auto;
+  color: #fff;
+  background-color: #f2711d;
+  border-color: #f2711d;
+  padding: 18px 34px !important;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.17px; }
+  .freetrialwrapper .btn-sign-up:hover {
+    color: #fff;
+    background-color: #dc5e0d;
+    border-color: #d0590c; }
+  .freetrialwrapper .btn-sign-up:focus, .freetrialwrapper .btn-sign-up.focus {
+    box-shadow: 0 0 0 0.2rem rgba(242, 113, 29, 0.5); }
+  .freetrialwrapper .btn-sign-up.disabled, .freetrialwrapper .btn-sign-up:disabled {
+    color: #fff;
+    background-color: #f2711d;
+    border-color: #f2711d; }
+  .freetrialwrapper .btn-sign-up:not(:disabled):not(.disabled):active, .freetrialwrapper .btn-sign-up:not(:disabled):not(.disabled).active, .show > .freetrialwrapper .btn-sign-up.dropdown-toggle {
+    color: #fff;
+    background-color: #d0590c;
+    border-color: #c4540b; }
+    .freetrialwrapper .btn-sign-up:not(:disabled):not(.disabled):active:focus, .freetrialwrapper .btn-sign-up:not(:disabled):not(.disabled).active:focus, .show > .freetrialwrapper .btn-sign-up.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(242, 113, 29, 0.5); }
+
 footer {
   position: relative;
   overflow: hidden; }

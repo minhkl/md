@@ -201,7 +201,17 @@ $md-main-text-color: #F47D20;
     letter-spacing: 1.17px;
   }
 }
-
+.freetrialwrapper {
+  .btn-sign-up {
+    margin: 50px auto;
+    @include button-variant($md-main-color, $md-main-color);
+    padding: 18px 34px !important;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.17px;
+  }
+}
 footer {
   position: relative;
   overflow: hidden;
